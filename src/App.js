@@ -12,10 +12,11 @@ const products = [
 
 function App() {
   return (
+    /*********load external posts and display on UI*********/
     <div>
       <ExternalPosts></ExternalPosts>
     </div>
-    /*********load dynamic data and display on UI*********/
+    /*********load external data and display on UI*********/
     // <div>
     //   <ExternalUsers></ExternalUsers>
     // </div>
@@ -23,10 +24,11 @@ function App() {
     // <div style={{ textAlign: 'center' }}>
     //   <Counter></Counter>
     // </div>
-
+    /***************** understanding map function ************/
     // <div>
     //   {products.map(product => <Product name={product.name} price={product.price}></Product>)}
     // </div>
+    /***************** understanding component ************/
     // <div>
     //   <Product name="laptop" price="69000"></Product>
     //   <Product name="mobile" price="49000"></Product>
@@ -61,7 +63,7 @@ function Counter() {
 
 }
 
-/*********load external data and display on UI dynamicly*********/
+/*********load external users and display on UI dynamicly*********/
 function ExternalUsers() {
   const [users, setUsers] = useState([])
   useEffect(() => {
@@ -91,6 +93,7 @@ function User(props) {
   )
 }
 
+/*********load external posts and display on UI dynamicly*********/
 function ExternalPosts() {
   const [posts, setPosts] = useState([])
   useEffect(() => {
@@ -107,6 +110,7 @@ function ExternalPosts() {
   )
 }
 
+/* component4 */
 function Posts(props) {
   return (
     <div className='product'>
